@@ -17,7 +17,14 @@ def sumar():
     param1 = int(request.args.get('param1', 0))
     param2 = int(request.args.get('param2', 0))
     result = param1 + param2
-    return f'La suma es: {result}'
+    return f'{param1} + {param2} = {result}'
+
+@app.route('/multiplicar')
+def multiplicar():
+    param1 = int(request.args.get('param1', 0))
+    param2 = int(request.args.get('param2', 0))
+    result = param1 * param2
+    return f'{param1} * {param2} = {result}'
 
 if __name__ == '__main__':
     app.run(debug=True)
