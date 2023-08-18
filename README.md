@@ -5,7 +5,7 @@
 
 # Comandos utilizados:
 
-### Alejandro Calizaya
+## Alejandro Calizaya
 Primera parte:
 - git add app.py
 - git commit -m "Prueba v2"
@@ -24,7 +24,7 @@ Tercera parte:
 - git checkout master
 - git merge feature1
 
-### Jose Leandro Machaca
+## Jose Leandro Machaca
 
 
 Paso 1:
@@ -34,9 +34,28 @@ Paso 1:
 - nvim app.py
 - git add app.py
 - git commit -m "Modificacion 2"
-- git push --set-upstream origin feature1
+- git push --set-upstream origin feature2
 
 Paso 2:
 - Hice pull request
 - git merge feature2
-- Delete branch feature2
+- git branch -D feature2
+
+## Matias Maravi Anyosa
+
+
+Paso 1:
+- git clone https://github.com/AlejandroCalizaya/git-ingsoft-acalizaya
+- cd git-ingsoft-acalizaya
+- code .
+### En la terminal de VsCode despues de editar app.py
+- git branch feature3
+- git checkout feature3
+- git add .
+- git commit -m "Modificado la función hello con wiiiiiiiii"
+- git push --set-upstream origin feature3
+
+Paso 2:
+- Hice pull request
+- git merge feature3
+- Borre la rama desde la web
