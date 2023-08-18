@@ -1,8 +1,14 @@
 from flask import Flask
-from flask import request
 
 app = Flask(__name__)
-@app.route('/')
 
+@app.route('/')
 def hello():
     return '<h1>Hello, feature1!</h1>'
+
+@app.route('/greet/<name>')
+def greet(name):
+    return f'<h2>Hello, {name}!</h2>'
+
+if __name__ == '__main__':
+    app.run(debug=True)
