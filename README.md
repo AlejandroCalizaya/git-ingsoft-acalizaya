@@ -23,3 +23,20 @@ Segunda parte:
 Tercera parte:
 - git checkout master
 - git merge feature1
+
+### Jose Leandro Machaca
+
+
+Paso 1:
+- git clone https://github.com/AlejandroCalizaya/git-ingsoft-acalizaya
+- git branch feature2
+- git checkout feature2
+- nvim app.py
+- git add app.py
+- git commit -m "Modificacion 2"
+- git push --set-upstream origin feature1
+
+Paso 2:
+- Hice pull request
+- git merge feature2
+- Delete branch feature2
